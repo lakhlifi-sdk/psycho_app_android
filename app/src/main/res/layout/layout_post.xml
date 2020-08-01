@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:elevation="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imagePostProfile"
+                android:src="@drawable/profile"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="6dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lakhlifi Essaddiq"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/txtPostName"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wed 29 07"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorLightGrey"
+                    android:textStyle="bold"
+                    android:id="@+id/txtPostDate"/>
+
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnPostOption"
+                android:layout_gravity="end"></ImageButton>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wed 29 07"
+            android:textSize="14sp"
+            android:textColor="@color/colorGrey"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:id="@+id/txtPostDesc"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+
+            android:src="@drawable/p1"
+            android:id="@+id/imagePostPhoto">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPostLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:background="@android:color/transparent">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/btnPostComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_chat_bubble_outline_24"
+                android:background="@android:color/transparent">
+            </ImageButton>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 Likes"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/txtPostLikesCount"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all 20 comments"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/txtPostCommentsCount"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorLightGrey"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
